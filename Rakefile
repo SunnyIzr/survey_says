@@ -1,5 +1,6 @@
+require './survey_controller'
 require 'sinatra/activerecord/rake'
-require './survey-controller.rb'
+
 
 
 desc "drop the database"
