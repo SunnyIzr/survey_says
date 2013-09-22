@@ -1,0 +1,10 @@
+
+<h1> <%= @survey_title %> </h1>
+<h3>Create Your Questions!</h3>
+<form action="/surveys/<%= @survey_id %>/questions" method="post"> 
+  <% @question_number.to_i.times do |question| %>
+
+Question <%= question+1 %> <input type="text" name="question[]" required><br/>
+  <% end %>
+<input type="submit">
+</form> 

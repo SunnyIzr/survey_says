@@ -1,0 +1,15 @@
+<h2> Account Dashboard </h2>
+<h3> Hello <%=@user_name.first_name%> </h3>
+Not <%=@user_name.first_name%>? <a href='/clear'> Logout </a>
+
+<form action="/create_survey_form">
+  <input type="submit" value="Create New Survey">
+</form>
+
+<% @surveys.each do |survey| %>
+  <p>
+    <a href="/surveys/all_responses/<%=survey.id%>">
+    <%= survey.title %>
+    </a>
+  </p>
+<% end %>

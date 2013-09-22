@@ -1,0 +1,7 @@
+<h3>Congrats! Survey Says: You've created a new survey!</h3>
+
+<a href = "/surveys/<%= params[:survey_id]%>">
+  Here is the link to your survey!
+</a><br/>
+
+<a href="/<%= Survey.find(params[:survey_id]).user_id %>">Back to Dashboard</a>

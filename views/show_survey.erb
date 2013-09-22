@@ -1,0 +1,10 @@
+<h1><%= @survey.title %></h1>
+
+
+<% @survey.questions.each_with_index do |question| %>
+  <h3><%= question.question %></h3>
+  <% question.responses.each_with_index do |response| %>
+    <%= response.response_text %><br/>
+    <%end%>
+    <hr>
+  <% end %>

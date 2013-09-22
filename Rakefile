@@ -1,13 +1,8 @@
 require 'sinatra/activerecord/rake'
-require_relative './app/config'
+require_relative './config'
 
 
 desc "drop the database"
 task "db:drop" do
-  rm_f ENV['DATABASE_URL']
-end
-
-desc "create an irb console with environment loaded"
-task "console" do
-  exec 'irb -r./survey_controller'
+  rm_f 'db/survey_says.sqlite3'
 end
