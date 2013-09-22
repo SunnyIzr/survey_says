@@ -1,5 +1,5 @@
 require 'sinatra/activerecord/rake'
-require_relative './config'
+require './config'
 
 
 desc "drop the database"
