@@ -7,4 +7,13 @@ gem 'sinatra-activerecord'
 gem 'shoulda-matchers'
 gem 'bcrypt-ruby'
 gem 'rake'
-gem 'sqlite3'
+
+
+group :development do 
+	gem 'sqlite3'
+	gem "tux"
+end
+
+group :production do
+	gem 'pg'
+end
