@@ -1,9 +1,0 @@
-<h1><%= @survey.title%></h1>
-<form action="/surveys/<%= @survey_id %>/responses" method="post"> 
-<% @survey.questions.each do |item| %>
-  <h3><%= "#{item.question}" %></h3>
-  <textarea rows="10" cols="50" name="response[]"></textarea>
-  <br />
-<%end%>
-<input type="submit" value="download virus">
-</form>
