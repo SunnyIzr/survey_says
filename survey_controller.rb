@@ -1,6 +1,12 @@
 require "sinatra"
-require_relative 'config'
+require 'active_record'
+require "sinatra/activerecord"
+require './environments'
 require_relative 'session_helper'
+require_relative 'models/question'
+require_relative 'models/survey'
+require_relative 'models/response'
+require_relative 'models/user'
 
 enable :sessions
 

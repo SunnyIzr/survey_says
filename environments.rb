@@ -3,7 +3,7 @@ require 'sinatra'
 require 'sinatra/activerecord'
 
 configure :development do
-	set :database, 'sqlite:///dev.db'
+	set :database, 'sqlite3:///dev.db'
 end
 
 configure :production do 
